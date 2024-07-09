@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Cinzel:wght@400..900&display=swap");
+
+.socials {
+  &__heading {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 300;
+    color: $--purple-text;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_link {
+      font-family: "Calistoga", serif;
+      font-size: 70px;
+      font-weight: 700;
+    }
+
+    &_right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &_icon {
+        font-size: 70px;
+      }
+    }
+  }
+}

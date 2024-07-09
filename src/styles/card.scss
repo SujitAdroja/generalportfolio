@@ -1,11 +1,16 @@
 .card {
-  width: 300px;
-  background: linear-gradient(#b68bed, #fff 90%);
-  color: #532eb9;
+  background: linear-gradient(var(--bg), #fff 90%);
+  color: var(--text);
   padding: 30px;
   border-radius: 20px;
 
+  &__icon {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 300;
+  }
   &__heading {
+    font-size: 32px;
     padding: 0;
     margin-bottom: 40px;
   }

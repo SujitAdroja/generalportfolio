@@ -1,17 +1,24 @@
 import React from "react";
+import { IoCodeSlashOutline } from "react-icons/io5";
+import { SiAffinitydesigner } from "react-icons/si";
 
-function Card() {
+function Card({ cardBg, cardTextColor, cardHeading, cardItems, cardProjects }) {
   return (
-    <div className="card container mx-auto">
-      <div className="card__img"></div>
-      <h1 className="card__heading">UI/UX & Graphic Design</h1>
+    <div className="card " style={{ "--bg": cardBg, "--text": cardTextColor }}>
+      <div className="card__icon ">
+        {cardHeading === "FrontEnd Developer" ? (
+          <IoCodeSlashOutline />
+        ) : (
+          <SiAffinitydesigner />
+        )}
+      </div>
+      <h1 className="card__heading">{cardHeading}</h1>
       <ul className="card__list">
-        <li className="card__list_item">Experience Design</li>
-        <li className="card__list_item">Interaction</li>
-        <li className="card__list_item">Illustration</li>
-        <li className="card__list_item">Animation</li>
+        {cardItems.map((item) => (
+          <li className="card__list_item">{item}</li>
+        ))}
       </ul>
-      <h2 className="card__project_no">148+ projects</h2>
+      <h2 className="card__project_no">{cardProjects}</h2>
     </div>
   );
 }
