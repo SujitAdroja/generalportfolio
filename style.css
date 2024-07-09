@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --lightBg: #d2b0ff;
+  --darkBg: #aa7ae8;
+  --textColor: #4928b0;
+  --circleBg: #4928b0;
+  --circleInner: #dd3061;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background: var(--lightBg);
+  transition: all 1s;
+}
+/* .green.background {
+  background: #a2e8b6;
+} */
+
+.content-container {
+  width: calc(100vw - 100px);
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--darkBg);
+  transition: all 1s ease-in-out;
+  transition-delay: 1s;
+  overflow: hidden;
+  z-index: 1;
+} /*  */
+.green .content-container {
+  background: var(--darkBg);
+}
+/* .content-container {
+  background: var(--darkBg);
+} */
+
+.profession {
+  margin-left: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+svg {
+  fill: currentColor;
+  height: auto;
+  max-width: 78vmin;
+  transform-origin: center;
+  width: 78%;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fdc285;
+  animation: rotateLeftText 2s infinite ease-in-out;
+}
+
+@keyframes rotateLeftText {
+  to {
+    transform: rotate(0deg);
+    /* opacity: 0; */
+  }
+  from {
+    transform: rotate(360deg);
+    /* opacity: 1; */
+  }
+}
+
+.image {
+  position: absolute;
+  background-color: var(--circleBg);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.filler_circle {
+  position: absolute;
+  background-color: var(--darkBg);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: fill 2s infinite ease-in-out;
+  z-index: -1;
+}
+@keyframes fill {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(70);
+  }
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 70px 0;
+}
+.navbarLink {
+  text-decoration: none;
+  color: white;
+}
+/* .green .about_me {
+  color: #1c6255;
+} */
+.about_me {
+  color: var(--textColora);
+}
+
+/* .green .content-container {
+  background: #7ccf91;
+} */
+
+.my-content {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 50px;
+  gap: 20px;
+  position: relative;
+}
+.arrow_container {
+  position: absolute;
+  left: 10%;
+  top: 0;
+}
+.arrowPurple {
+  display: block;
+  opacity: 1;
+  transition: all 1s;
+}
+.green .arrowPurple {
+  display: none;
+  opacity: 0;
+}
+.arrowGreen {
+  opacity: 0;
+  display: none;
+  transition: all 1s;
+}
+.green .arrowGreen {
+  display: block;
+  opacity: 1;
+}
+
+.my-content-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #fdc285;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.lets-talk-container {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: -12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.green .lets-talk-circle {
+  background: conic-gradient(#1a5861 50%, rgba(0, 0, 0, 0) 50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: rotateLeftPurple 2s infinite ease-in-out;
+}
+
+@keyframes rotateLeftPurple {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+    background: conic-gradient(#4928b0 50%, rgba(0, 0, 0, 0) 50%);
+  }
+}
+
+.lets-talk-circle {
+  background: conic-gradient(#4928b0 50%, rgba(0, 0, 0, 0) 50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: rotateLeft 2s infinite ease-in-out;
+}
+
+@keyframes rotateLeft {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    background: conic-gradient(#1a5861 50%, rgba(0, 0, 0, 0) 50%);
+    transform: rotate(0deg);
+  }
+}
+
+.lets-talk-arrow {
+  position: absolute;
+  padding: 25px;
+  font-size: 20px;
+  background-color: #ff6f03;
+  border-radius: 50%;
+  transition: background-color 2s ease-in-out;
+}
+.green .lets-talk-arrow {
+  background-color: #dd3061;
+  transition: background-color 2s ease-in-out;
+}
+
+.arrow_container {
+  align-self: start;
+}
