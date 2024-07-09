@@ -60,9 +60,9 @@ body {
 svg {
   fill: currentColor;
   height: auto;
-  max-width: 78vmin;
+  max-width: 100vmin;
   transform-origin: center;
-  width: 78%;
+  width: 100%;
   font-size: 16px;
   text-transform: uppercase;
   color: #fdc285;
@@ -83,8 +83,8 @@ svg {
 .image {
   position: absolute;
   background-color: var(--circleBg);
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   z-index: 1;
 }
@@ -217,7 +217,7 @@ svg {
   }
 }
 
-.lets-talk-arrow {
+.lets-talk-arrow-container {
   position: absolute;
   padding: 25px;
   font-size: 20px;
@@ -225,9 +225,19 @@ svg {
   border-radius: 50%;
   transition: background-color 2s ease-in-out;
 }
-.green .lets-talk-arrow {
+.green .lets-talk-arrow-container {
   background-color: #dd3061;
   transition: background-color 2s ease-in-out;
+}
+.lets-talk-text {
+  position: absolute;
+  top: -5px;
+  left: -2px;
+  right: -3px;
+  color: #d2b0ff;
+}
+.green .lets-talk-text {
+  color: #a2e8b6;
 }
 
 .arrow_container {
