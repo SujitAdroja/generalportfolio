@@ -9,10 +9,13 @@
     font-size: 40px;
     font-weight: 300;
   }
-  &__heading {
-    font-size: 32px;
-    padding: 0;
+  &__heading_container {
     margin-bottom: 40px;
+  }
+  &__heading {
+    font-size: 40px;
+    padding: 0;
+    font-family: $--font-pathway;
   }
   &__list {
     list-style: none;

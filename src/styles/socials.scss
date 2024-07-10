@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Cinzel:wght@400..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 .socials {
   &__heading {
     text-transform: uppercase;
@@ -7,15 +6,16 @@
     font-size: 20px;
     font-weight: 300;
     color: $--purple-text;
+    margin-bottom: 40px;
   }
   &__links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     &_link {
-      font-family: "Calistoga", serif;
+      font-family: $--font-pathway;
       font-size: 70px;
-      font-weight: 700;
+      font-weight: 400;
     }
 
     &_right {
