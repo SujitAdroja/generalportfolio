@@ -12,11 +12,11 @@
   --circleInner: #dd3061;
 }
 
-body {
+/* body {
   display: flex;
   align-items: center;
   justify-self: center;
-}
+} */
 .background {
   width: 100%;
   height: 100vh;
