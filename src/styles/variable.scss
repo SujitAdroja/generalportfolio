@@ -1,12 +1,35 @@
 $--purple: #532eb9;
 $--purple-text: #532eb9;
-
-//green color combinations
 $--green: #1b646b;
 $--green-text: #1b646b;
 
-// font family
+@font-face {
+  font-family: 'Didot';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Didot'), url('../../public/assets/fonts/Didot.otf') format('opentype');
+}
 
-// $--font-pathway: "Imbue", serif;
-// $--font-pathway: "Cinzel Decorative", serif;
-$--font-pathway: "Cinzel", serif;
+@font-face {
+  font-family: 'Didot';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Didot'), url('../../public/assets/fonts/Didot.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Didot Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Didot Bold'), url('../../public/assets/fonts/Didot\ Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Didot Title';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Didot Title'), url('../../public/assets/fonts/Didot\ Title.otf') format('opentype');
+}
+
+// font family
+$--header-font: "Didot Bold";
