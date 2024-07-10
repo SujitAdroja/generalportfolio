@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    // gap: 30px;
   }
   &__subheading {
     font-size: 20px;
@@ -19,7 +19,7 @@
     letter-spacing: 3px;
   }
   &__heading {
-    font-family: $--font-pathway;
+    font-family: $--header-font;
     display: block;
     font-size: 70px;
     margin-bottom: 30px;
@@ -39,8 +39,8 @@
   border-radius: 50%;
 }
 .circle {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   text-align: center;
   font-size: 60px;
   background: #df376b;
@@ -48,6 +48,9 @@
   rotate: 90deg;
   font-weight: 100;
   color: #f7b4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lets_takl_text {

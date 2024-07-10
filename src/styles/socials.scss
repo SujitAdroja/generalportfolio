@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+
 .socials {
   &__heading {
     text-transform: uppercase;
@@ -13,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     &_link {
-      font-family: $--font-pathway;
+      font-family: $--header-font;
       font-size: 70px;
       font-weight: 400;
     }
