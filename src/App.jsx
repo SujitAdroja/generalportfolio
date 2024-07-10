@@ -3,12 +3,13 @@ import "./App.scss";
 import Card from "./components/Card";
 import Socials from "./components/Socials";
 import Contact from "./components/Contact";
+import Scrollers from "./components/scroller/Scrollers";
 
 function App() {
   return (
     <>
-      <div className="w-[900px] mx-auto">
-        <div className=" grid grid-cols-2 gap-10 items-center justify-center py-10">
+      <div>
+        <div className="container grid grid-cols-2 gap-10 items-center justify-center py-10">
           <Card
             cardBg={"#b68bed"}
             cardTextColor={"#532eb9"}
@@ -36,10 +37,12 @@ function App() {
             ]}
           />
         </div>
-        <div className="socials socials_section">
+        <Scrollers />
+        <div className="container socials socials_section">
           <Socials />
         </div>
       </div>
+
       <Contact />
     </>
   );
