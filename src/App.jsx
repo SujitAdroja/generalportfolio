@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div>
-        <div className="container grid grid-cols-2 gap-10 items-center justify-center py-10">
+        <div className="container mx-auto grid grid-cols-2 gap-10 items-center justify-center py-10">
           <Card
             cardBg={"#b68bed"}
             cardTextColor={"#532eb9"}
@@ -38,11 +38,10 @@ function App() {
           />
         </div>
         <Scrollers />
-        <div className="container socials socials_section">
+        <div className="container mx-auto socials socials_section">
           <Socials />
         </div>
       </div>
-
       <Contact />
     </>
   );
