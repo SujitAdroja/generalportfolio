@@ -1,8 +1,9 @@
 .card {
-  background: linear-gradient(var(--bg), #fff 90%);
+  background: linear-gradient(var(--bg), #FFFFFF 100%);
   color: var(--text);
-  padding: 30px;
+  padding: 40px;
   border-radius: 20px;
+  min-width: 48%;
 
   &__icon {
     margin-bottom: 20px;

@@ -2,31 +2,24 @@
   position: relative;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
+  height: 200px;
 }
-// body {
-//   display: flex;
-//   align-items: flex-start;
-// }
+
 .stb_line_single {
   position: relative;
   white-space: nowrap;
   padding: 0;
   will-change: transform;
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
+  overflow: hidden;
 }
+
 .stb-item {
   padding: 0;
-  font-size: 60px;
+  font-size: 6.4rem;
   display: inline-block;
-  margin-right: 5rem;
-  color: #2797fe;
-  font-family: "Ivar Display";
-  font-weight: 400;
-  letter-spacing: 0.3rem;
-  text-decoration: none;
-}
-.stb-item:hover {
-  color: #c02534;
+  margin-right: 10rem;
+  font-family: "Didot Bold";
+  transform: scaleY(1.5);
 }

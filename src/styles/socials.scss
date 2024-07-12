@@ -1,27 +1,32 @@
 .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 6rem 0rem;
   &__heading {
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     font-size: 20px;
     font-weight: 300;
     color: $--purple-text;
-    margin-bottom: 40px;
   }
   &__links {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 200px;
     &_link {
       font-family: $--header-font;
       font-size: 70px;
       font-weight: 400;
+      transform: scaleY(1.2);
+      display: inline-block;
     }
-
     &_right {
       display: flex;
       align-items: center;
       gap: 10px;
-
       &_icon {
         font-size: 70px;
       }
